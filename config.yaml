@@ -39,12 +39,12 @@ deletion_func:
 gpt_3_func:
   use: false
   augment_num: 1
-  api_key: "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"
+  api_key: "xxx"
 
 gpt_35_func:
   use: false
   augment_num: 1
-  api_key: "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"
+  api_key: "xxx"
 
 # 随机插入方法设置
 # use: 使用 true/false 开启或关闭该数据增强方法
