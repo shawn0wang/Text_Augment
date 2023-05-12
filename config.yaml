@@ -1,0 +1,120 @@
+# 分词工具，使用 jieba 或哈工大 ltp
+# jieba github: https://github.com/fxsjy/jieba
+# ltp github: https://github.com/HIT-SCIR/ltp
+# 参数可选项："jieba","LTP/small","LTP/base","LTP/base1","LTP/base2","LTP/tiny","LTP/legacy"
+cut_words_tool_name: "jieba"
+
+# 加载停用词表
+# 参数可选项："hit","baidu","cn","scu"
+stop_words: "hit"
+
+# 简称替换方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+abbreviation_func:
+  use: false
+  augment_num: 1
+
+# 反义词替换方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+antonym_func:
+  use: false
+  augment_num: 1
+
+# 随机删除方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# del_p: 随机删除概率
+deletion_func:
+  use: false
+  augment_num: 1
+  del_p: 0.2
+
+# GPT3/ChatGPT 接口调用方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# api_key: OpenAI 的 api_key，需在其官网进行获取
+# 获取地址：https://platform.openai.com/account/api-keys
+gpt_3_func:
+  use: false
+  augment_num: 1
+  api_key: "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"
+
+gpt_35_func:
+  use: false
+  augment_num: 1
+  api_key: "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"
+
+# 随机插入方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# change_num: 每条新样本进行随机插入的次数
+insertion_func:
+  use: false
+  augment_num: 1
+  change_num: 1
+
+# 实体替换方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# ner_tool_name: 实体词识别模型，参数可选项："LTP/small","LTP/base","LTP/base1","LTP/base2","LTP/tiny","LTP/legacy"
+ner_func:
+  use: false
+  augment_num: 1
+  ner_tool_name: "LTP/small"
+
+# 基于 SimBert 等模型的生成方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# model：使用模型，参数可选项："simbert_tiny","simbert_small","simbert_base","roformer_sim_small","roformer_sim_base"
+# 模型资料
+# simbert: https://github.com/ZhuiyiTechnology/pretrained-models
+#          https://github.com/ZhuiyiTechnology/simbert
+# roformer_sim: https://github.com/ZhuiyiTechnology/roformer-sim
+seq2seq_sim_func:
+  use: false
+  augment_num: 1
+  model: "simbert_tiny"
+
+# 简体转繁体方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+simplified_traditional_func:
+  use: false
+
+# 随机交换方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# change_num: 每条新样本进行随机交换的次数
+swap_func:
+  use: true
+  augment_num: 1
+  change_num: 1
+
+# 同义词替换方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# change_num: 每条新样本进行同义词替换的个数
+# size: 每个词返回的同义词个数
+# threshold: 同义词阈值过滤
+# extra_file：传自己的同义词表
+synonyms_func:
+  use: false
+  augment_num: 1
+  change_num: 1
+  size: 10
+  threshold: 0.6
+  extra_file: null
+
+# 回译方法设置
+# use: 使用 true/false 开启或关闭该数据增强方法
+# augment_num: 每条样本返回的新样本个数
+# trans_tool：选择翻译 API，参数可选项："baidu","google"
+# app_id 和 secret_key 参数只是在选择 "baidu" API 时才会用到，使用 "google" 请忽略
+# app_id 和 secret_key 申请请前往：http://api.fanyi.baidu.com/manage/developer 可在开发者信息中查看
+translate_func:
+  use: false
+  augment_num: 1
+  trans_tool: "google"
+  app_id: "xxx"
+  secret_key: "xxx"

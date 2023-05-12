@@ -1,0 +1,2 @@
+{"data_id": "0", "raw_sentence": "今天晚上的天气是真的很不错哦\n\n", "func_name": "swap_func", "new_sentence": "今天晚上的不错是真的很天气哦\n\n", "from_file": "demo.jsonl"}
+{"data_id": "1", "raw_sentence": "数据库是以电子方式存储的系统数据集合。", "func_name": "swap_func", "new_sentence": "数据库是方式电子以存储的系统数据集合。", "from_file": "demo.jsonl"}

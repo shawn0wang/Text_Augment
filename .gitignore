@@ -1,0 +1,11 @@
+**/logs
+**/__pycache__
+**/.idea
+.idea
+__pycache__
+logs
+*.so
+*.egg
+*.egg-info
+*.pyc
+function/model
