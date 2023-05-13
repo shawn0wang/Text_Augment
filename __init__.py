@@ -7,7 +7,7 @@ from function.gpt_35_func import Gpt35Func
 from function.gpt_3_func import Gpt3Func
 from function.insertion_func import InsertionFunc
 from function.ner_func import NerFunc
-# from function.seq2seq_sim_func import Seq2SeqSimFunc
+from function.seq2seq_sim_func import Seq2SeqSimFunc
 from function.simplified_traditional_func import SimplifiedTraditionalFunc
 from function.swap_func import SwapFunc
 from function.synonyms_func import SynonymsFunc
@@ -21,7 +21,7 @@ func_obj = {
     "gpt_35_func": Gpt35Func,
     "insertion_func": InsertionFunc,
     "ner_func": NerFunc,
-    # "seq2seq_sim_func": Seq2SeqSimFunc,
+    "seq2seq_sim_func": Seq2SeqSimFunc,
     "simplified_traditional_func": SimplifiedTraditionalFunc,
     "swap_func": SwapFunc,
     "synonyms_func": SynonymsFunc,

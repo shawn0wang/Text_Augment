@@ -1,2 +1,9 @@
-{"data_id": "0", "raw_sentence": "今天晚上的天气是真的很不错哦\n\n", "func_name": "swap_func", "new_sentence": "今天晚上的不错是真的很天气哦\n\n", "from_file": "demo.jsonl"}
-{"data_id": "1", "raw_sentence": "数据库是以电子方式存储的系统数据集合。", "func_name": "swap_func", "new_sentence": "数据库是方式电子以存储的系统数据集合。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_3_func", "new_sentence": " 今晚的天气非常不错。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_3_func", "new_sentence": " 今晚的天气真好。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_3_func", "new_sentence": " 今晚的天气太棒了。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_35_func", "new_sentence": " 天气非常宜人，今晚的天气真是让人心情愉悦。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_35_func", "new_sentence": " 天色非常晴朗，今晚的天气真是太好了。", "from_file": "demo.jsonl"}
+{"data_id": "0", "raw_sentence": "今天晚上的天气是\n真的很不错哦", "func_name": "gpt_35_func", "new_sentence": " 今晚的天气非常美妙，非常适合户外活动。", "from_file": "demo.jsonl"}
+{"data_id": "1", "raw_sentence": "数据库是以电子方式存储的系统数据集合。", "func_name": "gpt_3_func", "new_sentence": " 数据库是一个由电子方式存储的系统数据集合。 ", "from_file": "demo.jsonl"}
+{"data_id": "1", "raw_sentence": "数据库是以电子方式存储的系统数据集合。", "func_name": "gpt_3_func", "new_sentence": " 数据库是以电子方式储存系统数据的综合体。", "from_file": "demo.jsonl"}
+{"data_id": "1", "raw_sentence": "数据库是以电子方式存储的系统数据集合。", "func_name": "gpt_3_func", "new_sentence": " 数据库是以电子形式保存的系统数据集合。 ", "from_file": "demo.jsonl"}

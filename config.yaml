@@ -37,13 +37,13 @@ deletion_func:
 # api_key: OpenAI 的 api_key，需在其官网进行获取
 # 获取地址：https://platform.openai.com/account/api-keys
 gpt_3_func:
-  use: false
-  augment_num: 1
+  use: true
+  augment_num: 3
   api_key: "xxx"
 
 gpt_35_func:
-  use: false
-  augment_num: 1
+  use: true
+  augment_num: 3
   api_key: "xxx"
 
 # 随机插入方法设置
@@ -72,10 +72,12 @@ ner_func:
 # simbert: https://github.com/ZhuiyiTechnology/pretrained-models
 #          https://github.com/ZhuiyiTechnology/simbert
 # roformer_sim: https://github.com/ZhuiyiTechnology/roformer-sim
+# threshold：返回文本的阈值
 seq2seq_sim_func:
   use: false
   augment_num: 1
   model: "simbert_tiny"
+  threshold: 0.5
 
 # 简体转繁体方法设置
 # use: 使用 true/false 开启或关闭该数据增强方法
@@ -87,7 +89,7 @@ simplified_traditional_func:
 # augment_num: 每条样本返回的新样本个数
 # change_num: 每条新样本进行随机交换的次数
 swap_func:
-  use: true
+  use: false
   augment_num: 1
   change_num: 1
 
